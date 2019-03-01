@@ -8,9 +8,9 @@ Address = 192.168.2.1/24
 PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -j MASQUERADE; iptables -A FORWARD -o wg0 -j ACCEPT
 PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -j MASQUERADE; iptables -D FORWARD -i wg0 -j ACCEPT
 ListenPort = 51820
-PrivateKey = [put your server private key here]
+PrivateKey = aGRqf7T7YHP5T5boCPoZr4vyDe+HE2Nzr3a2iTF+skM=
 
 # This configures one peer.
 [Peer]
-PublicKey = [put your peer public key here]
+PublicKey = xpXv0r2yrmB1Il7/7K2Ibsj4qVaknzWmf1kNzrjIiDI=
 AllowedIPs = 192.168.2.2/32
